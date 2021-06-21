@@ -1,0 +1,1289 @@
+*{
+ margin:0px;
+  padding:0px;
+  
+}
+nav{
+  
+  background: black;
+  display: inline-flex;
+  width:100%;
+  height:60px;
+  
+}
+nav p{
+  color:white;
+  font-size: 20px;
+  font-family:cursive;
+  
+}
+nav p span{ 
+color:  #ff7f50;
+}
+
+nav .navbar{
+  display:flex;
+   color:white;
+  
+}
+nav .navbar .box{
+  list-style:none;
+  margin:20px;
+  position:relative;
+  left:700px;
+  
+  
+}
+nav a{
+  text-decoration:none;
+  color:#ffff;
+  
+}
+.part1{
+  background:#ff7f50;
+  height:600px;
+  
+}
+.move{
+  position:relative;
+  /* div create kiya  sirf overflow k liye (iss div mai only  hello..... 
+  freenacer tak hai to pahle iski width and hight control ki */
+  z-index:2;
+  top:90px;
+  left:40px;
+  max-width:350px;
+  height:100px;
+ 
+  overflow:hidden;
+}
+.move .intro{
+ color:#fff;
+  font-size:20px;
+ 
+  
+}
+.wrapper{
+  display: inline-flex;
+  
+}
+.wrapper .static-txt{
+  color:#fff;
+  font-size:60px;
+  
+  font-weight: 400;
+  
+}
+.wrapper .dynamic-txt {
+  margin-left:15px;
+  height:110px;
+  line-height: 90px;
+  overflow:hidden;
+  
+}
+
+
+.wrapper .dynamic-txt li{
+  color:#ff0800;
+ 
+  list-style: none;
+  font-size:60px;
+  font-weight: 400;
+  position: relative;
+  top:0px;
+  /* yeh above TOP hi hai jo total width ko set kiye hue hai  */
+  animation: slide 8s steps(4) infinite;
+  /* steps ki madad se slide ki bajay step use kiya */
+  
+  
+  
+}
+@keyframes slide{
+  100%{
+    top:-360px;
+    /* yeh animation k liye hai  iski bajah se o- -60 range ho gayi hai */
+  }
+}
+.dynamic-txt li span{
+  position:relative;
+  bottom:9px;
+}
+.dynamic-txt li span:after{
+  content:"";
+  position:absolute;
+  background:#ff7f50;
+  left:0px;
+  border-left:4px solid #fc6060; 
+  height:120%;
+  width:100%;
+  
+  animation:typing 2s steps(10) infinite;
+  /* iski madad se sirf tab and bg create kiya */
+  
+}
+@keyframes typing{
+  100%{
+  left:130%;
+   margin:0px 35px 0px -35px;
+   /* iski margin smajh m nhi aayi  */
+   
+}
+}
+.part2{
+
+  
+  height:800px;
+  width:100%;
+  overflow:hidden;
+}
+.part2 .bgimg{
+ position: relative;
+  height:700px;
+ z-index:-2;
+  width:900px;
+  left:330px;
+  opacity:0.0;
+  
+}
+.part2 .container{
+    height:150px;
+    width:600px;
+    position: relative;
+    left:200px;
+   box-shadow:2px 2px 10px 3px ;
+    margin:80px;
+    padding:50px;
+    border-radius:30px;
+   bottom:700px;
+  }
+  .part2 .container .img{
+    
+    height:100px;
+  
+    
+  }
+  .part2 .container .img3{
+    height:100px;
+    width:140px;
+  }
+  .part2 .container .para{
+    position: relative;
+    bottom:100px;
+    left:150px;
+    max-width:455px;
+  }
+  
+  .part2 .container button{
+    position:relative;
+    cursor: pointer;
+    left:500px;
+    bottom:50px;
+    height:40px;
+    background: transparent;
+    border-radius: 10px;
+    border:2px solid  #ff7f50;
+  }
+.part3 .about{
+  display: flex;
+
+  width:950px;
+  height:300px;
+  margin:auto;
+  border:2px solid white;
+  border-radius:20px;
+  box-shadow: 2px 2px 20px 2px  ;
+  }
+
+.about .profile{
+  height:300px;
+  width:300px;
+  
+}
+
+.about .text{
+  font-size:20px;
+  overflow-x:scroll;
+  font-weight:500;
+}
+
+.part4{
+  
+  background: black;
+opacity:0.7;
+  max-width:100%;
+  height:450px;
+  
+}
+
+
+.part4 h1{
+  position:relative;
+  z-index:3;
+  color:white;
+  left:500px;
+  max-width:200px;
+  border-bottom: 2px solid #ff7f50;
+  top:10px;
+  
+  
+}
+.part4 form {
+  display:flex;
+  flex-direction: column;
+  position: relative;
+  top:40px;
+  left:500px;
+  max-width: 300px;
+  
+}
+
+.part4 .input{
+  border:none;
+  margin-bottom:20px;
+ outline:none;
+  max-width:200px;
+  background:transparent;
+  color:#ffff;
+  border-bottom:2px solid #ff7f50;
+  font-size:18px;
+
+}
+.part4 .desc{
+  border:none;
+  
+ outline:none;
+  max-width:200px;
+  background:transparent;
+  color:#ffff;
+  border-bottom:2px solid #ff7f50;
+  font-size:18px;
+  margin-top:20px;
+  max-height:20px;
+  overflow:auto;
+  
+
+}
+.part4 .btn{
+   max-width:200px;
+  background: transparent;
+  color:white;
+  height:40px;
+  width:70px;
+  position:relative;
+  top:10px;
+  left:60px;
+  border:2px solid white;
+  border-radius:20px;
+  
+  
+}
+.part4 .social{
+  max-width:300px;
+  
+  
+}
+.part4 .social img{
+ height:40px;
+  background:white;
+  margin:20px;
+  border-radius:10px;
+  position: relative;
+  left:510px;
+  top:50px;
+  
+  
+  
+  
+}
+.part4 p{
+  color:white;
+  position:relative;
+  top:80px;
+  
+}
+ .navbar .active{
+  background: #ff7f50;
+  padding:20px;
+  font-size:20px;
+
+}
+@media only screen and (min-width:1096px) and (max-width:1226px){
+  nav{
+  
+  background: black;
+  display: inline-flex;
+  width:100%;
+    height:120px;}
+
+nav p{
+  color:white;
+  font-size: 25px;
+  font-family:cursive;
+  position: relative;
+  top:20px;
+  left:20px;
+
+}
+nav p span{ 
+color:  #ff7f50;
+}
+
+nav .navbar{
+  display:flex;
+   color:white;
+  position:relative;
+  top:60px;
+  right:200px;
+  
+}
+nav .navbar .box{
+  list-style:none;
+  margin:20px;
+  position:relative;
+  left:700px;
+  
+  
+}
+nav a{
+  text-decoration:none;
+  color:#ffff;
+  
+}
+.part1{
+  background:#ff7f50;
+  height:600px;
+  
+}
+.move{
+  position:relative;
+  z-index:2;
+  top:90px;
+  left:90px;
+  max-width:300px;
+  
+}
+
+.part2{
+  height:800px;
+  width:100%;
+  overflow:hidden;
+}
+.part2 .bgimg{
+ position: relative;
+  height:700px;
+ z-index:-2;
+  width:900px;
+  left:230px;
+}
+.part2 .container{
+    height:150px;
+    width:600px;
+    position: relative;
+    left:140px;
+   box-shadow:2px 2px 10px 3px ;
+    margin:80px;
+    padding:50px;
+    border-radius:30px;
+   bottom:700px;
+  font-size:20px;
+  
+  overflow-x:scroll;
+  }
+  .part2 .container .img{
+    
+    height:100px;
+  
+    
+  }
+  .part2 .container .img3{
+    height:100px;
+    width:140px;
+  }
+  .part2 .container .para{
+    position: relative;
+    bottom:100px;
+    left:150px;
+  }
+  
+  .part2 .container button{
+    position:relative;
+    cursor: pointer;
+    left:500px;
+    bottom:50px;
+    height:40px;
+    background: transparent;
+    border-radius: 10px;
+    border:2px solid  #ff7f50;
+  }
+.part3 .about{
+  display: flex;
+
+  width:950px;
+  height:300px;
+  margin:auto;
+  border:2px solid white;
+  border-radius:20px;
+  box-shadow: 2px 2px 20px 2px  ;
+  }
+
+.about .profile{
+  height:300px;
+  width:300px;
+  
+}
+
+.about .text{
+  font-size:20px;
+  overflow-x:scroll;
+  font-weight:500;
+}
+
+.part4{
+  
+  background: black;
+opacity:0.7;
+  max-width:100%;
+  height:450px;
+  
+}
+
+
+.part4 h1{
+  position:relative;
+  z-index:3;
+  color:white;
+  left:450px;
+  max-width:200px;
+  border-bottom: 2px solid #ff7f50;
+  top:10px;
+  
+  
+}
+.part4 form {
+  display:flex;
+  flex-direction: column;
+  position: relative;
+  top:40px;
+  left:450px;
+  max-width: 300px;
+  
+}
+
+.part4 .input{
+  border:none;
+  margin-bottom:20px;
+ outline:none;
+  max-width:200px;
+  background:transparent;
+  color:#ffff;
+  border-bottom:2px solid #ff7f50;
+  font-size:18px;
+
+}
+.part4 .desc{
+  border:none;
+  
+ outline:none;
+  max-width:200px;
+  background:transparent;
+  color:#ffff;
+  border-bottom:2px solid #ff7f50;
+  font-size:18px;
+  margin-top:20px;
+  max-height:20px;
+  overflow:auto;
+  
+
+}
+.part4 .btn{
+   max-width:200px;
+  background: transparent;
+  color:white;
+  height:40px;
+  width:70px;
+  position:relative;
+  top:10px;
+  left:60px;
+  border:2px solid white;
+  border-radius:20px;
+  
+  
+}
+.part4 .social{
+  max-width:300px;
+  
+  
+}
+.part4 .social img{
+ height:40px;
+  background:white;
+  margin:20px;
+  border-radius:10px;
+  position: relative;
+  left:460px;
+  top:50px;
+  
+  
+  
+  
+}
+.part4 p{
+  color:white;
+  position:relative;
+  top:80px;
+  
+}
+ .navbar .active{
+  background: #ff7f50;
+  padding:20px;
+  font-size:20px;
+
+}
+}
+@media only screen and  (min-width:996px) and (max-width:1096px){
+  nav{
+  
+ 
+    height:120px;}
+
+nav p{
+   
+ 
+ position: relative;
+  
+  
+ 
+  top:30px;
+  left:20px;
+
+}
+
+
+nav .navbar{
+  display:flex;
+   color:white;
+  position:relative;
+  top:60px;
+  right:500px;
+  
+}
+
+
+
+  
+
+.move{
+  position:relative;
+  z-index:2;
+  top:90px;
+  left:90px;
+  max-width:300px;
+  
+}
+
+
+.part2 .bgimg{
+ 
+  left:130px;
+}
+.part2 .container{
+    
+    left:80px;
+   
+  }
+
+
+.part4{
+  
+  background: black;
+opacity:0.7;
+  max-width:100%;
+  height:450px;
+  
+}
+
+
+.part4 h1{
+  
+  left:350px;
+}
+.part4 form {
+ 
+  left:350px;
+ 
+  
+}
+
+
+.part4 .social img{
+ 
+  left:360px;
+  
+}
+
+}
+
+@media only screen and  (min-width:798px) and (max-width:996px){
+  nav{
+  
+    height:120px;}
+
+nav p{
+   
+ 
+ position: relative;
+  
+  
+ 
+  top:30px;
+  left:20px;
+
+}
+
+
+nav .navbar{
+  display:flex;
+   color:white;
+  position:relative;
+  top:60px;
+  right:500px;
+  
+}
+
+
+
+  
+
+.move{
+  position:relative;
+  z-index:2;
+  top:90px;
+  left:90px;
+  max-width:300px;
+  
+}
+
+
+.part2 .bgimg{
+ opacity:0.0;
+}
+.part2 .container{
+    
+    left:-30px;
+   
+  }
+.part4{
+  
+opacity:0.7;
+  max-width:100%;
+  height:450px;
+  
+}
+.part4 h1{
+  
+  left:290px;
+}
+.part4 form {
+ 
+  left:290px;
+ 
+  
+}
+
+
+.part4 .social img{
+ 
+  left:300px;
+  
+}
+
+}
+
+@media only screen and  (min-width:698px) and (max-width:798px){
+  nav{
+  
+    height:140px;}
+
+nav p{
+   
+ 
+ position: relative;
+ 
+  top:20px;
+  left:300px;
+
+}
+
+
+nav .navbar{
+  display:flex;
+   color:white;
+  position:relative;
+  top:80px;
+  right:640px;
+  
+}
+.move{
+  position:relative;
+  z-index:2;
+  top:90px;
+  left:90px;
+  max-width:300px;
+  
+}
+  .part2{
+    
+    height: 1000px
+  }
+
+.part2 .bgimg{
+ opacity:0.0;
+}
+.part2 .container{
+    height:300px;
+    width:300px;
+    position: relative;
+    left:90px;
+   box-shadow:2px 2px 10px 3px ;
+    margin:80px;
+    padding:40px;
+    border-radius:30px;
+   bottom:700px;
+  font-size: 15px;
+  }
+  .part2 .container .img{
+    
+    height:100px;
+  
+    
+  }
+   .part2 .container .para{
+    
+    height:100px;
+  position: absolute;
+     max-width:500px;
+     left:30px
+    
+  }
+  .part2 .container button{
+   position: relative;
+    left:-40px;
+    top:200px
+  }
+.part4{
+  
+opacity:0.7;
+  max-width:100%;
+  height:450px;
+  
+}
+.part4 h1{
+  
+  left:290px;
+}
+.part4 form {
+ 
+  left:290px;
+ 
+  
+}
+
+
+.part4 .social img{
+ 
+  left:300px;
+  
+}
+
+}
+@media only screen and  (min-width:598px) and (max-width:698px){
+  nav{
+  
+    height:160px;}
+
+nav p{
+   
+ 
+ position: relative;
+ 
+  top:30px;
+  left:260px;
+
+}
+
+
+nav .navbar{
+  display:flex;
+   color:white;
+  position:relative;
+  top:90px;
+  right:700px;
+  
+}
+.move{
+  position:relative;
+  z-index:2;
+  top:90px;
+  left:90px;
+  max-width:300px;
+  
+}
+  .part2{
+    
+    height: 1000px
+  }
+
+.part2 .bgimg{
+ opacity:0.0;
+}
+.part2 .container{
+    height:300px;
+    width:300px;
+    position: relative;
+    left:40px;
+   box-shadow:2px 2px 10px 3px ;
+    margin:80px;
+    padding:40px;
+    border-radius:30px;
+   bottom:700px;
+  font-size: 15px;
+  }
+  .part2 .container .img{
+    
+    height:100px;
+  
+    
+  }
+   .part2 .container .para{
+    
+    height:100px;
+  position: absolute;
+     max-width:500px;
+     left:30px
+    
+  }
+  .part2 .container button{
+   position: relative;
+    left:-40px;
+    top:200px
+  }
+.part4{
+  
+opacity:0.7;
+  max-width:100%;
+  height:450px;
+  
+}
+.part4 h1{
+  
+  left:190px;
+}
+.part4 form {
+ 
+  left:190px;
+ 
+  
+}
+
+
+.part4 .social img{
+ 
+  left:200px;
+  
+}
+
+}
+
+@media only screen and  (min-width:498px) and (max-width:598px){
+  nav{
+  
+    height:140px;}
+
+nav p{
+   
+ 
+ position: relative;
+ 
+  top:20px;
+  left:200px;
+
+}
+
+
+nav .navbar{
+  display:flex;
+   color:white;
+  position:relative;
+  top:80px;
+  right:740px;
+  
+}
+.move{
+  position:relative;
+  z-index:2;
+  top:90px;
+  left:90px;
+  max-width:300px;
+  
+}
+  .part2{
+    height: 1000px
+  }
+
+.part2 .bgimg{
+ opacity:0.0;
+}
+.part2 .container{
+    height:300px;
+    width:250px;
+    position: relative;
+    left:10px;
+   box-shadow:2px 2px 10px 3px ;
+    margin:80px;
+    padding:40px;
+    border-radius:30px;
+   bottom:700px;
+  font-size: 15px;
+  }
+  .part2 .container .img{
+    
+    height:100px;
+  
+    
+  }
+   .part2 .container .para{
+    
+    height:100px;
+  position: absolute;
+     max-width:400px;
+     left:30px
+    
+  }
+  .part2 .container button{
+   position: relative;
+    left:70px;
+    top:180px
+  }
+   .part2 .container .webbtn{
+   position: relative;
+    left:-70px;
+    top:180px
+  }
+.part4{
+  
+opacity:0.7;
+  max-width:100%;
+  height:450px;
+  
+}
+.part4 h1{
+  
+  left:190px;
+}
+.part4 form {
+ 
+  left:190px;
+ 
+  
+}
+
+
+.part4 .social img{
+ 
+  left:200px;
+  
+}
+
+}
+
+@media only screen and  (min-width:398px) and (max-width:498px){
+  nav{
+  
+    height:140px;}
+
+nav p{
+   
+ 
+ position: relative;
+ 
+  top:20px;
+  left:180px;
+
+}
+
+
+nav .navbar{
+  display:flex;
+   color:white;
+  position:relative;
+  top:80px;
+  right:780px;
+  
+}
+.move{
+  position:relative;
+  z-index:2;
+  top:90px;
+  left:90px;
+  max-width:300px;
+  
+}
+  .part2{
+    height: 1000px
+  }
+
+.part2 .bgimg{
+ opacity:0.0;
+}
+.part2 .container{
+    height:300px;
+    width:250px;
+    position: relative;
+    left:-30px;
+   box-shadow:2px 2px 10px 3px ;
+    margin:80px;
+    padding:40px;
+    border-radius:30px;
+   bottom:700px;
+  font-size: 15px;
+  }
+  .part2 .container .img{
+    
+    height:100px;
+  
+    
+  }
+   .part2 .container .para{
+    
+    height:100px;
+  position: absolute;
+     max-width:400px;
+     left:30px
+    
+  }
+  .part2 .container button{
+   position: relative;
+    left:70px;
+    top:180px
+  }
+   .part2 .container .webbtn{
+   position: relative;
+    left:-70px;
+    top:180px
+  }
+.part4{
+  
+opacity:0.7;
+  max-width:100%;
+  height:450px;
+  
+}
+.part4 h1{
+  
+  left:100px;
+}
+.part4 form {
+ 
+  left:100px;
+ 
+  
+}
+
+
+.part4 .social img{
+ 
+  left:110px;
+  
+}
+
+}
+
+
+
+@media only screen and  (min-width:298px) and (max-width:398px){
+  nav{
+    
+ height:140px;
+    
+  }
+
+nav p{
+   
+ 
+ position: relative;
+ 
+  top:20px;
+  left:180px;
+
+}
+
+
+nav .navbar{
+  display:flex;
+   color:white;
+  position:relative;
+  top:80px;
+  right:780px;
+  
+}
+ 
+.move{
+  position:relative;
+  z-index:2;
+  top:90px;
+  left:0px;
+  max-width:300px;
+  
+}
+  .part2{
+    height: 1000px
+  }
+
+.part2 .bgimg{
+ opacity:0.0;
+}
+.part2 .container{
+    height:300px;
+    width:180px;
+    position: relative;
+    left:-30px;
+   box-shadow:2px 2px 10px 3px ;
+    margin:80px;
+    padding:40px;
+    border-radius:30px;
+   bottom:700px;
+  font-size: 15px;
+  }
+  .part2 .container .img{
+    
+    height:100px;
+  
+    
+  }
+   .part2 .container .para{
+    height:100px;
+  position: absolute;
+     max-width:400px;
+     left:30px;
+  }
+  
+  .part2 .container button{
+   position: relative;
+    left:70px;
+    top:180px;
+  }
+  
+   .part2 .container .webbtn{
+   position: relative;
+    left:90px;
+    top:180px
+  }
+  
+.part4{
+  
+opacity:0.7;
+  max-width:100%;
+  height:450px;
+  
+}
+.part4 h1{
+  
+  left:100px;
+}
+.part4 form {
+  left:100px;
+}
+
+
+.part4 .social img{
+  left:110px;
+  
+}
+}
+
+@media only screen and  (max-width:350px){
+  nav{
+ height:140px;
+  }
+
+nav p{
+ position:relative;
+  top:20px;
+  left:100px;
+}
+nav .navbar{
+  display:flex;
+   color:white;
+  position:relative;
+  top:80px;
+  right:780px;
+}
+
+.move{
+  position:relative;
+  z-index:2;
+  top:90px;
+  left:0px;
+  max-width:300px;
+ 
+}
+   .dynamic-txt{
+    font-size:20px;
+  }
+  .part2{
+    height: 1000px
+  }
+
+.part2 .bgimg{
+ opacity:0.0;
+}
+.part2 .container{
+    height:300px;
+    width:180px;
+    position:relative;
+    left:-50px;
+   box-shadow:2px 2px 10px 3px ;
+    margin:80px;
+    padding:40px;
+    border-radius:30px;
+   bottom:700px;
+  font-size: 15px;
+  }
+  .part2 .container .img{
+    
+    height:100px;
+  }
+   .part2 .container .para{
+    height:100px;
+  position: absolute;
+     max-width:400px;
+     left:30px;
+  }
+  
+  .part2 .container button{
+   position: relative;
+    left:70px;
+    top:180px;
+  }
+   .part2 .container .webbtn{
+   position: relative;
+    left:90px;
+    top:180px
+  }
+  
+ .part4{
+opacity:0.7;
+  max-width:100%;
+  height:450px;
+  
+}
+.part4 h1{
+  left:100px;
+}
+.part4 form {
+  left:100px;
+}
+.part4 .social img{
+  left:110px;
+}
+}
+

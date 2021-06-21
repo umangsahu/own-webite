@@ -1,0 +1,52 @@
+body{
+  background: rgb(33, 89, 148);
+
+  
+}
+.wa
+p{
+  font-size: 20px;
+}
+.container{
+  background:white;
+   position:relative;
+  font-size: 20px;
+  bottom:63px;
+  right:10px;
+height:20px;
+  overflow: hidden;
+}
+.container li{
+  list-style: none;
+  animation:pro 7s steps(5,start) infinite;
+  position:relative;
+  bottom:0px;
+  margin-top:20px
+}
+@keyframes pro{
+  100%{bottom:30px}
+  
+}
+.container li span{
+  position: relative;
+  
+  
+}
+.container li span:after{
+  content:"";
+  position:absolute;
+   left:0px;
+  background: rgb(33, 89, 148);
+  height: 100%;
+  width:100%;
+  border-left:3px solid red;
+ animation:typing 1.5s steps(10) infinite;
+}
+@keyframes typing{
+  40%, 60%{
+    left:calc(100% + 0px);
+  }
+  100%{
+    left:0;
+  }
+}

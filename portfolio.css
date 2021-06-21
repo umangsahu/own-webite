@@ -1,0 +1,209 @@
+*{
+  margin:0px;
+  padding:0px;
+  
+}
+nav ul {
+ display: flex;
+  position:relative;
+  z-index:2;
+  background:transparent;
+  list-style: none;
+ 
+  
+  
+}
+nav ul .box{
+    position:relative;
+    margin:20px;
+    cursor: pointer;
+    left:190px;
+  
+   font-size:30px;
+ color:#D2CEBB;
+  border:2px solid white;
+  border-radius: 15px;
+}
+.one .imgone{
+ height: 100vh;
+  width: 100%;
+  align-items: center;
+  position:relative;
+ top:-100px;
+}
+.one .intro{
+  position:relative;
+  bottom:500px;
+  font-size:50px;
+  color:#4E30C7;
+  
+}
+.two .container{
+  height:150px;
+  width:600px;
+  position: relative;
+  left:200px;
+ box-shadow:2px 2px 10px 3px;
+  margin:80px;
+  padding:50px;
+  border-radius:30px;
+ 
+}
+.two .container .img{
+  
+  height:100px;
+
+  
+}
+.two .container .img3{
+  height:100px;
+  width:140px;
+}
+.two .container .para{
+  position: relative;
+  bottom:100px;
+  left:150px;
+}
+
+.two .container button{
+  position:relative;
+  cursor: pointer;
+  left:500px;
+  bottom:50px;
+  height:40px;
+  background: transparent;
+  border-radius: 10px;
+  border:2px solid ;
+  box-shadow: 2px 2px 20px #cccccc;
+ 
+}
+.third{
+  height:600px;
+  width:960px;
+  
+}
+.third .profile{
+  position:relative;
+  right:100px;
+  
+  
+}
+.third p{
+  position:relative;
+  bottom:300px;
+  left:300px;
+}
+.four{
+  display:flex;
+ background:linear-gradient(to bottom, gray,white,white);
+   height:900px;
+}
+.four .social{
+  margin:30px;
+  background: white;
+  height:300px;
+  width:200px;
+  border-radius:25px;
+  position:relative;
+  top:20px;
+  left:200px;
+}
+.four .social .logo{
+  height:130px;
+  position:relative;
+  top:20px;
+  left:35px;
+  
+}
+.four .social button{
+  position:relative;
+  top:110px;
+  padding:6px;
+  left:40px;
+  border-radius:10px;
+  
+}
+.four .social .insta{
+  position:relative;
+  top:110px;
+
+  left:50px;
+  
+  
+}
+.four form {
+  display: flex;
+  flex-direction: column;
+    position:relative;
+  top:400px;
+right:300px;
+   
+  
+}
+.four form .input{
+ 
+  height:20px;
+  margin:10px;
+  padding:5px;
+  width:200px;
+  border:2px solid gray;
+  border-radius:20px;
+
+}
+.four form .button{
+ position:relative;
+  height:40px;
+  margin:10px;
+  padding:5px;
+  width:80px;
+  border:2px solid gray;
+  border-radius:20px;
+left:60px;
+  cursor:pointer;
+  
+}
+.parichay .overflow{
+  max-height:10px;
+  overflow;hidden;
+}
+.parichay li{
+  position:relative;
+  bottom:560px;
+  left:200px;
+  font-size: 50px;
+  list-style: none;
+  font-weight: 500;
+  margin:10px;
+  animation: umang 7.5s  infinite;
+  overflow:hidden;
+}
+@keyframes umang{
+  100%{
+    bottom:860px;
+  }
+}
+  
+  
+.parichay .tareef span{
+ position:relative;
+  
+}
+.parichay .tareef span::after{
+  content:"";
+  position:absolute;
+   left:0px;
+  background:blue;
+  height: 100%;
+  width:100%;
+  border-left:3px solid red;
+ animation:typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing{
+  40%, 60%{
+    left:calc(100% + 30px);
+  }
+  100%{
+    left:0;
+  }
+}
